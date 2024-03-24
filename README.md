@@ -28,3 +28,9 @@ $ sudo apt install build-essential gcc cmake make imagemagick
 ```shell
 $ ./run.sh
 ```
+
+# Examples
+
+![Example 1](examples/example1.png)
+![Example 2](examples/example2.png)
+![Example 3](examples/example3.png)
