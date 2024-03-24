@@ -1,0 +1,11 @@
+CMakeFiles/**
+_deps/**
+bin/**
+lib/**
+CMakeCache.txt
+*.cmake
+Makefile
+maze
+libmaze_test
+liblibmaze.a
+picture.png
