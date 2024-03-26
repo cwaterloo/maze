@@ -7,6 +7,14 @@
 namespace maze {
 namespace {
 
+TEST(DualValueTest, EdgeValues) {
+  EXPECT_TRUE(DualValue(2147483647,-2147483648) < DualValue(-2147483648, 2147483647));
+}
+
+TEST(DualValueTest, CloseEdgeValues) {
+  EXPECT_TRUE(DualValue(2147483646,-2147483648) < DualValue(-2147483648, 2147483647));
+}
+
 TEST(MoreDualValueTest, FourAndMinusThree) {
   EXPECT_FALSE(DualValue(4, -3) > DualValue(0, 0));
 }
