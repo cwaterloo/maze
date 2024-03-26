@@ -8,7 +8,10 @@ namespace {
 
 inline int Sign(int64_t value) { return (value > 0) - (value < 0); }
 
-inline uint64_t Sqr(int64_t value) { return value * value; }
+inline uint64_t Sqr(int64_t value) { 
+  uint64_t abs_value = value < 0 ? -value : value;
+  return abs_value * abs_value; 
+}
 
 inline int64_t Diff(int64_t from, int64_t to) { return from - to; }
 
